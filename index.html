@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>La Plata de la Ciencia al Día | Vibras Positivas HM</title>
+<meta name="description" content="¿Qué pasó con más de $9.800 millones de la ciencia? Seguimiento ciudadano y derecho de petición a MinCiencias, Contraloría, Procuraduría y Fiscalía, enviado de una sola vez.">
+<meta name="theme-color" content="#0b1020">
+<meta property="og:title" content="La Plata de la Ciencia al Día">
+<meta property="og:description" content="Exige con derecho de petición qué pasó con más de $9.800 millones de la ciencia. Se envía a todas las entidades de una.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://plata-de-la-ciencia.netlify.app/">
+<meta property="og:site_name" content="Vibras Positivas HM">
+<meta property="og:locale" content="es_CO">
+<meta property="og:image" content="https://plata-de-la-ciencia.netlify.app/img/og.jpg">
+<meta property="og:image:secure_url" content="https://plata-de-la-ciencia.netlify.app/img/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ministra de Ciencia Claudia Benavides en MinCiencias: ¿Qué pasó con $9.800 millones de la plata de la ciencia?">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="La Plata de la Ciencia al Día">
+<meta name="twitter:description" content="Exige con derecho de petición qué pasó con más de $9.800 millones de la ciencia. Se envía a todas las entidades de una.">
+<meta name="twitter:image" content="https://plata-de-la-ciencia.netlify.app/img/og.jpg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="img/icon-192.jpg">
+<link rel="apple-touch-icon" href="img/icon-192.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b1020;--card:#141b33;--card2:#1b2445;--txt:#eef2ff;--mut:#9aa6d1;--a:#22d3ee;--b:#a855f7;--c:#facc15;--r:#fb7185;--ok:#34d399}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--txt);line-height:1.5;overflow-x:hidden}
+a{color:var(--a)}
+h1,h2,.big{font-family:'Archivo Black',Inter,sans-serif;letter-spacing:-.5px}
+.wrap{max-width:980px;margin:auto;padding:0 18px}
+/* barra */
+.top{position:sticky;top:0;z-index:20;display:flex;gap:8px;align-items:center;justify-content:space-between;padding:10px 14px;background:rgba(11,16,32,.85);backdrop-filter:blur(10px);border-bottom:1px solid #ffffff14}
+.brand{font-weight:800;font-size:.85rem}
+.brand b{background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;color:transparent}
+.btn{text-decoration:none;display:inline-block;border:0;border-radius:999px;padding:10px 16px;font:700 .9rem Inter;cursor:pointer;color:#0b1020;background:linear-gradient(90deg,var(--a),var(--b));transition:transform .15s,box-shadow .2s}
+.btn:active{transform:scale(.96)}
+.btn.sec{background:var(--card2);color:var(--txt);border:1px solid #ffffff22}
+.btn.big2{font-size:1.05rem;padding:16px 22px;width:100%;box-shadow:0 10px 40px #a855f755;animation:latido 2.4s infinite}
+@keyframes latido{0%,100%{box-shadow:0 10px 30px #a855f744}50%{box-shadow:0 10px 50px #22d3ee88}}
+.girando{animation:gira 1s linear infinite}
+@keyframes gira{to{filter:hue-rotate(360deg)}}
+/* hero */
+.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:ken 22s ease-in-out infinite alternate}
+@keyframes ken{from{transform:scale(1.05) translate(0,0)}to{transform:scale(1.25) translate(-4%,-3%)}}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0b102000 10%,#0b1020cc 55%,#0b1020 100%)}
+.hero .wrap{position:relative;z-index:2;padding-bottom:40px}
+.pill{display:inline-block;padding:5px 12px;border-radius:999px;background:#fb718522;border:1px solid var(--r);color:#fecdd3;font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;animation:parpadeo 1.6s infinite}
+@keyframes parpadeo{50%{opacity:.55}}
+.hero h1{font-size:clamp(2rem,7vw,3.6rem);line-height:1.05;margin:12px 0}
+.monto{font-size:clamp(2.6rem,11vw,5.5rem);background:linear-gradient(90deg,var(--c),#fb923c,var(--r));-webkit-background-clip:text;color:transparent;display:block}
+.hero p{color:#d6dcf5;max-width:640px}
+.hero .acc{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+/* ticker */
+.ticker{background:linear-gradient(90deg,var(--b),var(--a));color:#0b1020;font-weight:800;white-space:nowrap;overflow:hidden;padding:9px 0}
+.ticker span{display:inline-block;padding-left:100%;animation:corre 60s linear infinite}
+@keyframes corre{to{transform:translateX(-100%)}}
+section{padding:46px 0}
+h2{font-size:clamp(1.6rem,5vw,2.3rem);margin-bottom:6px}
+.sub{color:var(--mut);margin-bottom:20px}
+.card{background:var(--card);border:1px solid #ffffff12;border-radius:20px;padding:18px}
+/* hoy */
+.hoyhead{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.vivo{display:inline-flex;align-items:center;gap:8px;font-weight:800;color:var(--ok)}
+.vivo i{width:10px;height:10px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 #34d399;animation:pulso 1.5s infinite}
+@keyframes pulso{to{box-shadow:0 0 0 14px #34d39900}}
+.nota{display:block;text-decoration:none;color:var(--txt);padding:14px 16px;border-radius:16px;background:var(--card2);margin-bottom:10px;border-left:4px solid var(--a);transition:transform .2s,background .2s;animation:entra .5s both}
+.nota:hover{transform:translateX(4px);background:#222c55}
+.nota small{color:var(--mut);display:block;margin-top:4px}
+.nota.nueva{border-left-color:var(--c)}
+@keyframes entra{from{opacity:0;transform:translateY(12px)}}
+/* hallazgos */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.dato{background:linear-gradient(160deg,var(--card2),var(--card));border-radius:20px;padding:20px;border:1px solid #ffffff12;position:relative;overflow:hidden}
+.dato:before{content:"";position:absolute;width:140px;height:140px;border-radius:50%;right:-40px;top:-40px;background:radial-gradient(var(--b),transparent 70%);opacity:.35;animation:flota 6s ease-in-out infinite}
+.dato:nth-child(2n):before{background:radial-gradient(var(--a),transparent 70%);animation-delay:-3s}
+@keyframes flota{50%{transform:translate(-20px,20px)}}
+.dato .big{font-size:2.1rem;color:var(--c)}
+.dato p{color:#d6dcf5;font-size:.95rem;position:relative}
+/* ruta */
+.ruta{position:relative;padding-left:26px}
+.ruta:before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:3px;background:linear-gradient(var(--a),var(--b),var(--r))}
+.paso{position:relative;margin-bottom:18px}
+.paso:before{content:"";position:absolute;left:-24px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--a)}
+.paso.esp:before{border-color:var(--c);animation:parpadeo 1.2s infinite}
+.paso b{display:block}
+.paso span{color:var(--mut);font-size:.92rem}
+.entes{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:16px}
+.ente{background:var(--card2);border-radius:16px;padding:16px;border-top:4px solid var(--b)}
+.ente:nth-child(2){border-top-color:var(--a)}.ente:nth-child(3){border-top-color:var(--r)}
+.estado{display:inline-block;margin-top:8px;font-size:.75rem;font-weight:800;padding:4px 10px;border-radius:999px;background:#facc1522;color:var(--c)}
+/* petición */
+.pet{background:linear-gradient(160deg,#1e1b4b,#0f172a);border:1px solid #a855f755;border-radius:26px;padding:22px}
+label{display:block;font-size:.85rem;color:var(--mut);margin:12px 0 4px;font-weight:600}
+input,textarea{width:100%;padding:13px 14px;border-radius:12px;border:1px solid #ffffff22;background:#0b1020;color:var(--txt);font:1rem Inter}
+input:focus,textarea:focus{outline:2px solid var(--a)}
+.dos{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}
+@media(max-width:560px){.dos{grid-template-columns:1fr}}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 4px}
+.chip{display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;background:#0b1020;border:1px solid #ffffff22;cursor:pointer;font-weight:600;font-size:.9rem;user-select:none}
+.chip input{width:18px;height:18px;accent-color:var(--a)}
+.chip.on{border-color:var(--a);background:#22d3ee18}
+#carta{min-height:280px;font-size:.88rem;line-height:1.45;white-space:pre-wrap}
+.botones{display:grid;gap:10px;margin-top:16px}
+.fila{display:flex;gap:10px;flex-wrap:wrap}.fila .btn{flex:1;min-width:140px}
+.aviso{font-size:.82rem;color:var(--mut);margin-top:10px}
+.plazo{margin-top:14px;padding:14px;border-radius:14px;background:#34d39915;border:1px solid #34d39955}
+.plazo b{color:var(--ok)}
+#mias .nota{border-left-color:var(--ok)}
+/* buscador */
+.buscar{display:flex;gap:8px;margin-bottom:14px}
+.buscar input{flex:1}
+footer{padding:40px 0 60px;color:var(--mut);font-size:.85rem;text-align:center}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(120px);background:var(--ok);color:#0b1020;font-weight:800;padding:12px 18px;border-radius:999px;transition:transform .3s;z-index:50}
+.toast.ver{transform:translateX(-50%) translateY(0)}
+.reveal{opacity:0;transform:translateY(30px);transition:all .7s}
+.reveal.si{opacity:1;transform:none}
+@media print{.top,.hero,.ticker,section:not(#peticion),footer,.botones,.chips,.dos,label,.aviso{display:none!important}#peticion{padding:0}#carta{border:0;color:#000;background:#fff;font:12pt Georgia,serif;min-height:0}.pet{background:#fff;border:0;padding:0}body{background:#fff}}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="brand"><b>Vibras Positivas HM</b> · <span data-i="marca">La Plata de la Ciencia al Día</span></div>
+  <div style="display:flex;gap:6px">
+    <button class="btn sec" id="lang">EN</button>
+    <button class="btn" id="actualizar" data-i="actualizar">Actualizar</button>
+  </div>
+</div>
+
+<header class="hero">
+  <img src="img/ministra.jpg" alt="Ministra de Ciencia, Claudia Benavides Salazar, en la sede de MinCiencias">
+  <div class="wrap">
+    <span class="pill" data-i="pill">Caso en seguimiento</span>
+    <h1><span data-i="h1a">¿Qué pasó con</span> <span class="monto" id="contador">$0</span><span data-i="h1b">de la plata de la ciencia?</span></h1>
+    <p data-i="heroP">La ministra de Ciencia, Claudia Benavides Salazar, denunció hallazgos preliminares por más de $9.800 millones en recursos para la investigación, entre noviembre de 2024 y julio de 2026. Ya los pasó a Contraloría, Procuraduría y Fiscalía. Ahora nos toca a los ciudadanos exigir respuestas.</p>
+    <div class="acc">
+      <a class="btn" href="#peticion" data-i="irPet">Exigir con derecho de petición</a>
+      <a class="btn sec" href="#hoy" data-i="irHoy">Ver lo de hoy</a>
+    </div>
+  </div>
+</header>
+
+<div class="ticker"><span id="ticker">Cargando las últimas noticias del caso...</span></div>
+
+<section id="hoy"><div class="wrap reveal">
+  <div class="hoyhead">
+    <div><h2 data-i="hoyT">Hoy</h2><div class="sub" id="fechaHoy"></div></div>
+    <div class="vivo"><i></i><span id="estadoVivo" data-i="buscando">Buscando en vivo...</span></div>
+  </div>
+  <div id="listaHoy"></div>
+</div></section>
+
+<section id="hallazgos"><div class="wrap reveal">
+  <h2 data-i="hallT">Lo que encontraron</h2>
+  <p class="sub" data-i="hallS">Hallazgos preliminares que el Ministerio trasladó a los entes de control. Son presuntos: les toca a las autoridades confirmar responsabilidades.</p>
+  <div class="grid">
+    <div class="dato"><div class="big" data-n="9800">0</div><p data-i="d1">millones de pesos en hallazgos preliminares</p></div>
+    <div class="dato"><div class="big" data-n="32300">0</div><p data-i="d2">almuerzos pagados sin listas que digan quién se los comió</p></div>
+    <div class="dato"><div class="big" data-n="4000" data-pre="+">0</div><p data-i="d3">personas en eventos contratados sin soportes de infraestructura ni capacidad técnica</p></div>
+    <div class="dato"><div class="big" data-n="20">0</div><p data-i="d4">meses revisados: de noviembre de 2024 a julio de 2026</p></div>
+    <div class="dato"><div class="big" data-i="d5t">Antes</div><p data-i="d5">servicios certificados como recibidos antes de que se prestaran, y fechas que no cuadran</p></div>
+    <div class="dato"><div class="big" data-i="d6t">Garantías</div><p data-i="d6">contratos logísticos firmados en plena Ley de Garantías y precios sin justificación clara</p></div>
+  </div>
+</div></section>
+
+<section id="ruta"><div class="wrap reveal">
+  <h2 data-i="rutaT">La ruta del caso</h2>
+  <p class="sub" data-i="rutaS">Dónde va y qué falta.</p>
+  <div class="ruta">
+    <div class="paso"><b data-i="p1">Nov 2024 – Jul 2026</b><span data-i="p1s">Periodo en el que se ejecutaron los contratos y gastos revisados.</span></div>
+    <div class="paso"><b data-i="p2">2 de noviembre de 2026</b><span data-i="p2s">La ministra Claudia Benavides denuncia públicamente los hallazgos, congela los pagos y frena nuevas adiciones a esos contratos.</span></div>
+    <div class="paso"><b data-i="p3">Traslado a los entes de control</b><span data-i="p3s">Contraloría (lo fiscal), Procuraduría (lo disciplinario) y Fiscalía (lo penal) reciben el informe.</span></div>
+    <div class="paso esp"><b data-i="p4">Ahora: la ciudadanía pregunta</b><span data-i="p4s">Con derecho de petición cada colombiano puede exigir los soportes, los radicados y qué decisión se tomó. Tienen 15 días hábiles para responder (10 si se piden documentos).</span></div>
+  </div>
+  <div class="entes">
+    <div class="ente"><b>Contraloría General</b><br><span class="sub" data-i="e1">¿Abrió indagación o proceso de responsabilidad fiscal?</span><br><span class="estado" data-i="esperando">Esperando respuesta</span></div>
+    <div class="ente"><b>Procuraduría General</b><br><span class="sub" data-i="e2">¿Abrió indagación disciplinaria a los servidores?</span><br><span class="estado" data-i="esperando">Esperando respuesta</span></div>
+    <div class="ente"><b>Fiscalía General</b><br><span class="sub" data-i="e3">¿Hay noticia criminal y fiscal asignado?</span><br><span class="estado" data-i="esperando">Esperando respuesta</span></div>
+  </div>
+</div></section>
+
+<section id="peticion"><div class="wrap reveal">
+  <h2 data-i="petT">Exige qué pasó: derecho de petición</h2>
+  <p class="sub" data-i="petS">Una sola carta, dirigida a todas las entidades involucradas, que se envía de una vez desde tu correo. Es tu derecho (artículo 23 de la Constitución y Ley 1755 de 2015).</p>
+  <div class="pet">
+    <div class="dos">
+      <div><label data-i="fNom">Nombre completo</label><input id="nom" autocomplete="name"></div>
+      <div><label data-i="fCed">Cédula</label><input id="ced" inputmode="numeric"></div>
+      <div><label data-i="fCiu">Ciudad</label><input id="ciu" value="Caucasia, Antioquia"></div>
+      <div><label data-i="fTel">Celular</label><input id="tel" inputmode="tel"></div>
+    </div>
+    <label data-i="fMail">Correo donde te responden</label><input id="mail" type="email" autocomplete="email">
+
+    <label data-i="aQuien">Se envía a (todas marcadas):</label>
+    <div class="chips" id="chips"></div>
+
+    <label data-i="laCarta">Tu carta (puedes editarla)</label>
+    <p class="aviso" data-i="cartaEs" style="display:none">The letter is written in Spanish because it goes to Colombian authorities.</p>
+    <textarea id="carta"></textarea>
+
+    <div class="botones">
+      <button class="btn big2" id="enviarTodo" data-i="enviarTodo">Enviar a todas las entidades de una</button>
+      <div class="fila">
+        <button class="btn sec" id="gmail" data-i="gmail">Abrir en Gmail</button>
+        <button class="btn sec" id="copiar" data-i="copiar">Copiar carta y correos</button>
+        <button class="btn sec" id="pdf" data-i="pdf">Guardar en PDF</button>
+      </div>
+    </div>
+    <p class="aviso" data-i="avisoEnv">Al tocar el botón se abre tu correo con la carta lista y las entidades como destinatarias. Solo dale Enviar. Guarda el correo enviado: es tu prueba de radicación.</p>
+    <div class="plazo" id="plazo"></div>
+  </div>
+  <div id="mias" style="margin-top:20px"></div>
+</div></section>
+
+<section id="noticias"><div class="wrap reveal">
+  <h2 data-i="notT">Todas las noticias del caso</h2>
+  <p class="sub" id="actualizado"></p>
+  <div class="buscar"><input id="filtro" data-ph="filtroPh" placeholder="Buscar: Contraloría, almuerzos, Fiscalía..."></div>
+  <div id="listaTodas"></div>
+</div></section>
+
+<section id="comparte"><div class="wrap reveal card" style="text-align:center">
+  <h2 data-i="compT">Entre más peticiones, más presión</h2>
+  <p class="sub" data-i="compS">Pásala a tu familia y a tus grupos. Cada persona puede enviar la suya.</p>
+  <button class="btn big2" id="wa" data-i="wa" style="max-width:420px">Compartir por WhatsApp</button>
+</div></section>
+
+<footer><div class="wrap">
+  <p data-i="pie">App ciudadana de Vibras Positivas HM. Los hechos son hallazgos preliminares y presuntos; rige la presunción de inocencia hasta que las autoridades decidan. Fuentes: El Heraldo, Semana, Infobae, Portafolio, El Universal, El Nuevo Siglo, La Opinión y Google Noticias.</p>
+  <p style="margin-top:8px">vibraspositivashm.com · Caucasia, Antioquia</p>
+</div></footer>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const URL_APP = 'https://plata-de-la-ciencia.netlify.app';
+const TZ = 'America/Bogota';
+const ENTES = [
+  {id:'min', nombre:'Ministerio de Ciencia, Tecnología e Innovación (MinCiencias)', corto:'MinCiencias', mail:'atencionalciudadano@minciencias.gov.co'},
+  {id:'cgr', nombre:'Contraloría General de la República', corto:'Contraloría', mail:'cgr@contraloria.gov.co'},
+  {id:'pgn', nombre:'Procuraduría General de la Nación', corto:'Procuraduría', mail:'quejas@procuraduria.gov.co'},
+  {id:'fgn', nombre:'Fiscalía General de la Nación', corto:'Fiscalía', mail:'ges.documentalpqrs@fiscalia.gov.co'}
+];
+const ASUNTO = 'Derecho de petición - Hallazgos por más de $9.800 millones en MinCiencias (nov 2024 - jul 2026)';
+// Festivos Colombia nov 2026 - ene 2027 (para el plazo de 15 días hábiles)
+const FESTIVOS = ['2026-11-02','2026-11-16','2026-12-08','2026-12-25','2027-01-01','2027-01-11'];
+
+/* ---------- idioma ---------- */
+const EN = {
+  marca:'Science Money Watch', actualizar:'Refresh', pill:'Case being tracked', h1a:'What happened to', h1b:'of science money?',
+  heroP:'Colombia’s Science Minister, Claudia Benavides Salazar, reported preliminary findings of more than COP 9.8 billion in research funds misused between November 2024 and July 2026. She sent them to the Comptroller, the Inspector General and the Attorney General. Now it is up to citizens to demand answers.',
+  irPet:'Demand answers with a petition', irHoy:'See today', hoyT:'Today', buscando:'Searching live...',
+  hallT:'What they found', hallS:'Preliminary findings the Ministry sent to oversight bodies. They are alleged: authorities must confirm responsibility.',
+  d1:'million pesos in preliminary findings', d2:'lunches paid with no list of who ate them', d3:'people at events contracted with no proof of infrastructure or technical capacity', d4:'months reviewed: November 2024 to July 2026', d5t:'Before', d5:'services certified as received before they were delivered, and dates that do not match', d6t:'Election law', d6:'logistics contracts signed during the election-period restrictions, with prices lacking clear justification',
+  rutaT:'Case timeline', rutaS:'Where it stands and what is missing.', p1:'Nov 2024 – Jul 2026', p1s:'Period when the reviewed contracts and expenses were executed.', p2:'November 2, 2026', p2s:'Minister Claudia Benavides publicly reports the findings, freezes payments and halts new additions to those contracts.', p3:'Sent to oversight bodies', p3s:'Comptroller (fiscal), Inspector General (disciplinary) and Attorney General (criminal) receive the report.', p4:'Now: citizens ask', p4s:'With a right-of-petition letter every Colombian can demand documents, file numbers and decisions. They have 15 business days to answer (10 for documents).',
+  e1:'Has it opened a fiscal liability inquiry?', e2:'Has it opened a disciplinary inquiry?', e3:'Is there a criminal complaint and an assigned prosecutor?', esperando:'Awaiting answer',
+  petT:'Demand answers: right of petition', petS:'One letter, addressed to every institution involved, sent all at once from your email. It is your right (Article 23 of the Constitution and Law 1755 of 2015).',
+  fNom:'Full name', fCed:'ID number (cédula)', fCiu:'City', fTel:'Mobile', fMail:'Email for their reply', aQuien:'Sent to (all checked):', laCarta:'Your letter (you can edit it)',
+  enviarTodo:'Send to all institutions at once', gmail:'Open in Gmail', copiar:'Copy letter and emails', pdf:'Save as PDF',
+  avisoEnv:'Tapping the button opens your email with the letter ready and the institutions as recipients. Just hit Send. Keep the sent email: it is your proof of filing.',
+  notT:'All news about the case', filtroPh:'Search: Comptroller, lunches, prosecutor...', compT:'More petitions, more pressure', compS:'Share it with your family and groups. Everyone can send their own.', wa:'Share on WhatsApp',
+  pie:'Citizen app by Vibras Positivas HM. These are preliminary, alleged findings; presumption of innocence applies until authorities decide. Sources: El Heraldo, Semana, Infobae, Portafolio, El Universal, El Nuevo Siglo, La Opinión and Google News.'
+};
+const ES = {};
+let lang = localStorage.getItem('pc_lang') || 'es';
+document.querySelectorAll('[data-i]').forEach(el => ES[el.dataset.i] = el.textContent);
+ES.filtroPh = document.getElementById('filtro').placeholder;
+const T = k => (lang === 'en' ? EN : ES)[k] || ES[k] || k;
+function aplicarIdioma(){
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-i]').forEach(el => { el.textContent = T(el.dataset.i); });
+  document.getElementById('filtro').placeholder = T('filtroPh');
+  document.getElementById('lang').textContent = lang === 'es' ? 'EN' : 'ES';
+  document.querySelector('[data-i="cartaEs"]').style.display = lang === 'en' ? 'block' : 'none';
+  pintarFecha(); pintarNoticias(); pintarPlazo(); pintarMias();
+}
+document.getElementById('lang').onclick = () => { lang = lang === 'es' ? 'en' : 'es'; localStorage.setItem('pc_lang', lang); aplicarIdioma(); };
+
+/* ---------- utilidades de fecha (hora real de Colombia) ---------- */
+const fmt = (d, o) => new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'es-CO', {timeZone:TZ, ...o}).format(d);
+const diaBog = d => new Intl.DateTimeFormat('en-CA', {timeZone:TZ}).format(d); // YYYY-MM-DD
+function haceCuanto(d){
+  const m = Math.round((Date.now() - d) / 60000);
+  if (lang === 'en') return m < 60 ? `${m} min ago` : m < 1440 ? `${Math.round(m/60)} h ago` : `${Math.round(m/1440)} days ago`;
+  return m < 60 ? `hace ${m} min` : m < 1440 ? `hace ${Math.round(m/60)} h` : `hace ${Math.round(m/1440)} días`;
+}
+function sumarHabiles(desde, n){
+  const d = new Date(desde); let c = 0;
+  while (c < n){ d.setDate(d.getDate()+1); const s = diaBog(d); const w = new Date(s+'T12:00:00').getDay(); if (w && w !== 6 && !FESTIVOS.includes(s)) c++; }
+  return d;
+}
+function pintarFecha(){
+  document.getElementById('fechaHoy').textContent = fmt(new Date(), {weekday:'long', day:'numeric', month:'long', year:'numeric', hour:'numeric', minute:'2-digit'}) + (lang==='en'?' (Colombia time)':' (hora de Colombia)');
+}
+
+/* ---------- noticias: JSON del robot + búsqueda en vivo ---------- */
+let NOTICIAS = [], actualizadoRobot = null;
+const CLAVES = /(minciencias|ministerio de ciencia|ministra de ciencia|claudia benavides|9\.?800)/i;
+function unir(lista){
+  const mapa = new Map(NOTICIAS.map(n => [n.titulo.toLowerCase(), n]));
+  let nuevas = 0;
+  lista.forEach(n => { const k = n.titulo.toLowerCase(); if (!mapa.has(k)) { mapa.set(k, n); nuevas++; } });
+  NOTICIAS = [...mapa.values()].sort((a,b) => new Date(b.fecha) - new Date(a.fecha));
+  return nuevas;
+}
+async function cargarRobot(){
+  try { const r = await fetch('noticias.json?t=' + Date.now(), {cache:'no-store'}); const j = await r.json(); actualizadoRobot = new Date(j.actualizado); unir(j.noticias); } catch(e){}
+}
+async function buscarVivo(){
+  const q = encodeURIComponent('MinCiencias 9.800 millones OR "Claudia Benavides" hallazgos when:30d');
+  const rss = `https://news.google.com/rss/search?q=${q}&hl=es-419&gl=CO&ceid=CO:es-419`;
+  const proxies = [u => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u), u => 'https://corsproxy.io/?url=' + encodeURIComponent(u)];
+  for (const p of proxies){
+    try {
+      const r = await fetch(p(rss)); if (!r.ok) continue;
+      const xml = new DOMParser().parseFromString(await r.text(), 'text/xml');
+      const items = [...xml.querySelectorAll('item')].map(it => {
+        const fuente = it.querySelector('source')?.textContent || 'Google Noticias';
+        let titulo = it.querySelector('title')?.textContent || '';
+        if (titulo.endsWith(' - ' + fuente)) titulo = titulo.slice(0, -(fuente.length + 3));
+        return {titulo, fuente, url: it.querySelector('link')?.textContent, fecha: new Date(it.querySelector('pubDate')?.textContent || Date.now()).toISOString(), vivo:true};
+      }).filter(n => CLAVES.test(n.titulo));
+      if (items.length) return items;
+    } catch(e){}
+  }
+  return [];
+}
+const notaHTML = n => `<a class="nota ${n.vivo?'nueva':''}" href="${n.url}" target="_blank" rel="noopener">${n.titulo.replace(/</g,'&lt;')}<small>${n.fuente} · ${fmt(new Date(n.fecha),{day:'numeric',month:'short',hour:'numeric',minute:'2-digit'})} · ${haceCuanto(new Date(n.fecha))}</small></a>`;
+function pintarNoticias(){
+  const hoy = diaBog(new Date());
+  const deHoy = NOTICIAS.filter(n => diaBog(new Date(n.fecha)) === hoy);
+  const lh = document.getElementById('listaHoy');
+  if (!NOTICIAS.length) lh.innerHTML = `<div class="card">${lang==='en'?'Loading news...':'Cargando noticias...'}</div>`;
+  else if (deHoy.length) lh.innerHTML = deHoy.map(notaHTML).join('');
+  else lh.innerHTML = `<p class="sub">${lang==='en'?'No new stories yet today. Latest:':'Hoy todavía no hay noticias nuevas. Esto es lo más reciente:'}</p>` + NOTICIAS.slice(0,3).map(notaHTML).join('');
+  const f = document.getElementById('filtro').value.trim().toLowerCase();
+  const filtradas = NOTICIAS.filter(n => !f || (n.titulo + ' ' + n.fuente).toLowerCase().includes(f));
+  document.getElementById('listaTodas').innerHTML = filtradas.map(notaHTML).join('') || `<p class="sub">${lang==='en'?'No results.':'Sin resultados.'}</p>`;
+  document.getElementById('ticker').textContent = NOTICIAS.slice(0,8).map(n => `${n.fuente}: ${n.titulo}`).join('   ·   ') || '...';
+  if (actualizadoRobot) document.getElementById('actualizado').textContent = (lang==='en'?'News robot updated ':'El robot actualizó ') + haceCuanto(actualizadoRobot) + ` · ${NOTICIAS.length} ` + (lang==='en'?'stories':'noticias');
+}
+document.getElementById('filtro').oninput = pintarNoticias;
+async function refrescar(){
+  const b = document.getElementById('actualizar'), ev = document.getElementById('estadoVivo');
+  b.classList.add('girando'); ev.textContent = T('buscando');
+  await cargarRobot(); pintarNoticias();
+  const n = unir(await buscarVivo()); pintarNoticias();
+  b.classList.remove('girando');
+  ev.textContent = (lang==='en'?'Live · ':'En vivo · ') + fmt(new Date(),{hour:'numeric',minute:'2-digit'});
+  toast(n ? (lang==='en'?`${n} new stories`:`${n} noticias nuevas`) : (lang==='en'?'Up to date':'Todo al día'));
+}
+document.getElementById('actualizar').onclick = refrescar;
+
+/* ---------- derecho de petición ---------- */
+const chips = document.getElementById('chips');
+chips.innerHTML = ENTES.map(e => `<label class="chip on"><input type="checkbox" value="${e.id}" checked> ${e.corto}</label>`).join('');
+chips.onchange = ev => { ev.target.parentElement.classList.toggle('on', ev.target.checked); armarCarta(true); };
+const campos = ['nom','ced','ciu','tel','mail'];
+campos.forEach(id => { const el = document.getElementById(id); el.value = localStorage.getItem('pc_'+id) || el.value; el.oninput = () => { localStorage.setItem('pc_'+id, el.value); armarCarta(true); }; });
+const elegidos = () => [...chips.querySelectorAll('input:checked')].map(i => ENTES.find(e => e.id === i.value));
+let editada = false;
+document.getElementById('carta').oninput = () => editada = true;
+function armarCarta(forzar){
+  if (editada && !forzar) return;
+  editada = false;
+  const v = id => document.getElementById(id).value.trim();
+  const sel = elegidos();
+  const fecha = new Intl.DateTimeFormat('es-CO',{timeZone:TZ,day:'numeric',month:'long',year:'numeric'}).format(new Date());
+  const pide = {
+    min: `A MINCIENCIAS:
+1. Copia del informe de hallazgos preliminares por más de $9.800 millones (nov 2024 - jul 2026).
+2. Relación de los contratos y convenios involucrados: número, contratista, objeto, valor, fechas y estado de pago.
+3. Soportes de los 32.300 almuerzos, de los eventos para más de 4.000 personas y de los contratos logísticos firmados en Ley de Garantías.
+4. Valor de los pagos congelados y medidas para recuperar los recursos.
+5. Fecha y número de radicado con que se trasladó el informe a Contraloría, Procuraduría y Fiscalía.`,
+    cgr: `A LA CONTRALORÍA:
+1. Confirmar si recibió el informe de MinCiencias y con qué número de radicado.
+2. Informar si abrió indagación preliminar o proceso de responsabilidad fiscal, la dependencia a cargo y su estado.
+3. Informar el valor del presunto detrimento patrimonial establecido hasta hoy.`,
+    pgn: `A LA PROCURADURÍA:
+1. Confirmar si recibió el informe de MinCiencias y con qué número de radicado.
+2. Informar si abrió indagación previa o investigación disciplinaria, la dependencia a cargo y su estado.
+3. Informar si se han tomado medidas preventivas sobre los contratos aún en ejecución.`,
+    fgn: `A LA FISCALÍA:
+1. Confirmar si recibió el informe de MinCiencias y con qué número de radicado.
+2. Informar si se registró noticia criminal, el número asignado y la unidad o fiscal delegado a cargo.
+3. Informar el estado general de la actuación, en lo que no esté sometido a reserva legal.`
+  };
+  const txt = `${v('ciu') || '[Ciudad]'}, ${fecha}
+
+Señores
+${sel.map(e => e.nombre).join('\n')}
+E. S. D.
+
+Asunto: ${ASUNTO}
+
+Yo, ${v('nom') || '[Nombre completo]'}, identificado(a) con cédula de ciudadanía No. ${v('ced') || '[Cédula]'}, en ejercicio del derecho fundamental de petición (artículo 23 de la Constitución Política y Ley 1755 de 2015), me dirijo respetuosamente a ustedes.
+
+HECHOS
+El 2 de noviembre de 2026 la ministra de Ciencia, Tecnología e Innovación, Claudia Benavides Salazar, informó públicamente hallazgos preliminares de presuntas irregularidades por más de $9.800 millones en recursos destinados a la ciencia y la investigación, ocurridos entre noviembre de 2024 y julio de 2026: 32.300 almuerzos sin listas de beneficiarios, servicios certificados antes de prestarse, fechas y precios sin justificación, eventos para más de 4.000 personas sin soportes y contratos logísticos firmados en vigencia de la Ley de Garantías. Según el Ministerio, el informe fue trasladado a la Contraloría, la Procuraduría y la Fiscalía.
+
+PETICIONES
+${sel.map(e => pide[e.id]).join('\n\n')}
+
+Esta petición se envía en un solo mensaje a todas las entidades. Si alguna no es competente para un punto, solicito darle traslado conforme al artículo 21 de la Ley 1755 de 2015 e informarme.
+
+Solicito respuesta de fondo dentro de los términos legales (15 días hábiles; 10 días hábiles para la entrega de documentos).
+
+NOTIFICACIONES
+Correo electrónico: ${v('mail') || '[Correo]'}
+Celular: ${v('tel') || '[Celular]'}
+
+Atentamente,
+
+${v('nom') || '[Nombre completo]'}
+C.C. ${v('ced') || '[Cédula]'}`;
+  document.getElementById('carta').value = txt;
+}
+function listo(){
+  const faltan = ['nom','ced','mail'].filter(id => !document.getElementById(id).value.trim());
+  if (faltan.length){ toast(lang==='en'?'Fill in name, ID and email':'Llena nombre, cédula y correo'); document.getElementById(faltan[0]).focus(); return false; }
+  if (!elegidos().length){ toast(lang==='en'?'Pick at least one institution':'Marca al menos una entidad'); return false; }
+  return true;
+}
+function registrar(){
+  const mias = JSON.parse(localStorage.getItem('pc_mias') || '[]');
+  mias.unshift({fecha: new Date().toISOString(), entes: elegidos().map(e => e.corto)});
+  localStorage.setItem('pc_mias', JSON.stringify(mias.slice(0,20)));
+  pintarMias();
+}
+const para = () => elegidos().map(e => e.mail).join(',');
+document.getElementById('enviarTodo').onclick = () => {
+  if (!listo()) return;
+  registrar();
+  location.href = `mailto:${para()}?subject=${encodeURIComponent(ASUNTO)}&body=${encodeURIComponent(document.getElementById('carta').value)}`;
+};
+document.getElementById('gmail').onclick = () => {
+  if (!listo()) return;
+  registrar();
+  window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(para())}&su=${encodeURIComponent(ASUNTO)}&body=${encodeURIComponent(document.getElementById('carta').value)}`, '_blank');
+};
+document.getElementById('copiar').onclick = async () => {
+  const t = `PARA: ${para().replace(/,/g, ', ')}\nASUNTO: ${ASUNTO}\n\n${document.getElementById('carta').value}`;
+  try { await navigator.clipboard.writeText(t); toast(lang==='en'?'Copied':'Copiado'); } catch(e){ toast('No se pudo copiar'); }
+};
+document.getElementById('pdf').onclick = () => { if (listo()) window.print(); };
+function pintarPlazo(){
+  const lim = sumarHabiles(new Date(), 15), doc = sumarHabiles(new Date(), 10);
+  const f = d => fmt(d,{weekday:'long',day:'numeric',month:'long'});
+  document.getElementById('plazo').innerHTML = lang==='en'
+    ? `If you send it today, they must answer by <b>${f(lim)}</b> (documents by <b>${f(doc)}</b>). If they do not, you can file a tutela.`
+    : `Si la envías hoy, deben responderte a más tardar el <b>${f(lim)}</b> (los documentos, el <b>${f(doc)}</b>). Si no responden, puedes poner una tutela.`;
+}
+function pintarMias(){
+  const mias = JSON.parse(localStorage.getItem('pc_mias') || '[]');
+  const c = document.getElementById('mias');
+  if (!mias.length){ c.innerHTML = ''; return; }
+  c.innerHTML = `<h3 style="margin-bottom:10px">${lang==='en'?'My petitions':'Mis peticiones'}</h3>` + mias.map(m => {
+    const lim = sumarHabiles(new Date(m.fecha), 15), vencida = Date.now() > lim;
+    return `<div class="nota"><b>${fmt(new Date(m.fecha),{day:'numeric',month:'long',year:'numeric',hour:'numeric',minute:'2-digit'})}</b> · ${m.entes.join(', ')}<small>${lang==='en'?'Deadline':'Plazo de respuesta'}: ${fmt(lim,{day:'numeric',month:'long'})} ${vencida?(lang==='en'?'· OVERDUE: you can file a tutela':'· VENCIDO: puedes poner tutela'):''}</small></div>`;
+  }).join('');
+}
+
+/* ---------- compartir ---------- */
+document.getElementById('wa').onclick = () => {
+  const t = lang==='en'
+    ? `What happened to more than COP 9.8 billion of science money? Send your petition to MinCiencias, the Comptroller, the Inspector General and the Attorney General all at once: ${URL_APP}`
+    : `¿Qué pasó con más de $9.800 millones de la plata de la ciencia? Envía tu derecho de petición a MinCiencias, Contraloría, Procuraduría y Fiscalía de una sola vez: ${URL_APP}`;
+  window.open('https://wa.me/?text=' + encodeURIComponent(t), '_blank');
+};
+
+/* ---------- animaciones ---------- */
+function contar(el, fin, pre='', suf=''){
+  const t0 = performance.now(), dur = 1800;
+  (function paso(t){ const p = Math.min(1,(t-t0)/dur), e = 1-Math.pow(1-p,3); el.textContent = pre + Math.round(fin*e).toLocaleString('es-CO') + suf; if (p<1) requestAnimationFrame(paso); })(t0);
+}
+contar(document.getElementById('contador'), 9800, '$', lang==='en' ? ' million' : ' millones');
+const obs = new IntersectionObserver(es => es.forEach(e => { if (!e.isIntersecting) return; e.target.classList.add('si');
+  e.target.querySelectorAll('[data-n]').forEach(b => { if (!b.dataset.ok){ b.dataset.ok=1; contar(b, +b.dataset.n, b.dataset.pre||''); } }); }), {threshold:.15});
+document.querySelectorAll('.reveal').forEach(r => obs.observe(r));
+function toast(m){ const t = document.getElementById('toast'); t.textContent = m; t.classList.add('ver'); clearTimeout(t._t); t._t = setTimeout(() => t.classList.remove('ver'), 2600); }
+
+/* ---------- arranque: cada vez que se entra, se actualiza ---------- */
+armarCarta(true); aplicarIdioma(); refrescar();
+setInterval(pintarFecha, 60000);
+document.addEventListener('visibilitychange', () => { if (!document.hidden) refrescar(); });
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
+</script>
+</body>
+</html>
